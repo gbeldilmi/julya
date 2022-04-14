@@ -1,0 +1,67 @@
+package julya.io;
+
+public enum ANSIEscapeCode {
+  RESET("\u001B[0m"),
+  INCREASED_INTENSITY("\u001B[1m"),
+  DECREASED_INTENSITY("\u001B[2m"),
+  ITALIC("\u001B[3m"),
+  UNDERLINE("\u001B[4m"),
+  SLOW_BLINK("\u001B[5m"),
+  RAPID_BLINK("\u001B[6m"),
+  INVERT("\u001B[7m"),
+  CONCEAL("\u001B[8m"),
+  STRIKE("\u001B[9m"),
+  DEFAULT_FONT("\u001B[10m"),
+  ALTERNATIVE_FONT_1("\u001B[11m"),
+  ALTERNATIVE_FONT_2("\u001B[12m"),
+  ALTERNATIVE_FONT_3("\u001B[13m"),
+  ALTERNATIVE_FONT_4("\u001B[14m"),
+  ALTERNATIVE_FONT_5("\u001B[15m"),
+  ALTERNATIVE_FONT_6("\u001B[16m"),
+  ALTERNATIVE_FONT_7("\u001B[17m"),
+  ALTERNATIVE_FONT_8("\u001B[18m"),
+  ALTERNATIVE_FONT_9("\u001B[19m"),
+  BACKLETTER_FONT("\u001B[20m"),
+  DOUBLE_UNDERLINE("\u001B[21m"),
+  NORMAL_INTENSITY("\u001B[22m"),
+  NOT_ITALIC("\u001B[23m"),
+  NOT_UNDERLINE("\u001B[24m"),
+  NOT_BLINKING("\u001B[25m"),
+  PROPORTIONAL_SPACING("\u001B[26m"),
+  NOT_INVERSE("\u001B[27m"),
+  NOT_CONCEAL("\u001B[28m"),
+  NOT_STRIKE("\u001B[29m"),
+  FOREGROUND_BLACK("\u001B[30m"),
+  FOREGROUND_RED("\u001B[31m"),
+  FOREGROUND_GREEN("\u001B[32m"),
+  FOREGROUND_YELLOW("\u001B[33m"),
+  FOREGROUND_BLUE("\u001B[34m"),
+  FOREGROUND_MAGENTA("\u001B[35m"),
+  FOREGROUND_CYAN("\u001B[36m"),
+  FOREGROUND_WHITE("\u001B[37m"),
+  DEFAULT_FOREGROUND("\u001B[39m"),
+  BACKGROUND_BLACK("\u001B[40m"),
+  BACKGROUND_RED("\u001B[41m"),
+  BACKGROUND_GREEN("\u001B[42m"),
+  BACKGROUND_YELLOW("\u001B[43m"),
+  BACKGROUND_BLUE("\u001B[44m"),
+  BACKGROUND_MAGENTA("\u001B[45m"),
+  BACKGROUND_CYAN("\u001B[46m"),
+  BACKGROUND_WHITE("\u001B[47m"),
+  DEFAULT_BACKGROUND("\u001B[49m"),
+  NOT_PROPORTIONAL_SPACING("\u001B[50m");
+  
+  private String escapeCode;
+  private ANSIEscapeCode(String code) {
+    setEscapeCode(code);
+  }
+  private String getEscapeCode() {
+    return escapeCode;
+  }
+  private void setEscapeCode(String code) {
+    escapeCode = code;
+  }
+  public String toString() {
+    return getEscapeCode();
+  }
+}

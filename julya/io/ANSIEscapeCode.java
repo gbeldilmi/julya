@@ -50,17 +50,21 @@ public enum ANSIEscapeCode {
   BACKGROUND_WHITE("\u001B[47m"),
   DEFAULT_BACKGROUND("\u001B[49m"),
   NOT_PROPORTIONAL_SPACING("\u001B[50m");
-  
+
   private String escapeCode;
+
   private ANSIEscapeCode(String code) {
     setEscapeCode(code);
   }
+
   private String getEscapeCode() {
     return escapeCode;
   }
+
   private void setEscapeCode(String code) {
     escapeCode = code;
   }
+
   public String toString() {
     return getEscapeCode();
   }

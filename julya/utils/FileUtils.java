@@ -7,6 +7,21 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileUtils {
+  public static void createFile(String path) {
+    File file = new File(path);
+    try {
+      if (!file.exists()) {
+        file.createNewFile();
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  public static boolean fileExist(String path) {
+    return new File(path).exists();
+  }
+
   public static String getFileExtension(String path) {
     int index;
     if (path == null) {

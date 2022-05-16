@@ -4,7 +4,7 @@ public class TextUtils {
   public static String fitText(String text, int maxLength) {
     StringBuilder sb;
     String words[];
-    int i, j, lineLength;
+    int i, lineLength;
     if (text == null) {
       return null;
     }

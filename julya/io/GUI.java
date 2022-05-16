@@ -68,7 +68,7 @@ public class GUI {
 
   public static String getString(Component parent, Object message) {
     String input;
-    input = JOptionPane.showInputDialog​(parent, message, "", JOptionPane.QUESTION_MESSAGE);
+    input = JOptionPane.showInputDialog(parent, message, "", JOptionPane.QUESTION_MESSAGE);
     return input == null ? "" : input;
   }
 

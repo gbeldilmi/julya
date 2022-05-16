@@ -3,8 +3,6 @@ package julya.io;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import julya.utils.TextUtils;
-
 public class CLI {
   public static void clearScreen() {
     System.out.print("\033[H\033[2J");
